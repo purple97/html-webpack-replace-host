@@ -1,0 +1,27 @@
+{
+    "name": "html-webpack-replace-host",
+    "version": "1.0.0",
+    "description": "webpack plugin",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/purple97/html-webpack-replace-host.git"
+    },
+    "keywords": [
+        "webpack",
+        "html",
+        "js"
+    ],
+    "author": "dezhao.chen",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/purple97/html-webpack-replace-host/issues"
+    },
+    "homepage": "https://github.com/purple97/html-webpack-replace-host#readme",
+    "dependencies": {
+        "html-webpack-plugin": "^3.2.0"
+    }
+}
