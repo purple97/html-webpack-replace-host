@@ -46,11 +46,11 @@ HtmlWebpackReplaceHost.prototype._setAttributesSrc = function (tag, replaceStr, 
         }
         tag.attributes = Object.assign({}, tag.attributes, { src: _src });
     }
-    console.log('\n');
-    console.log('\n');
-    console.log(tag);
-    console.log('\n');
-    console.log('\n');
+    // console.log('\n');
+    // console.log('\n');
+    // console.log(tag);
+    // console.log('\n');
+    // console.log('\n');
 
     return tag;
 };
