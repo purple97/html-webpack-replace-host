@@ -1,11 +1,11 @@
 {
     "name": "html-webpack-replace-host",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "webpack plugin",
     "main": "lib/index.js",
     "scripts": {
         "delete": "rm -rf lib && rm -rf dist",
-        "build": "npm run delete && npx babel src --out-dir lib",
+        "build": "npm run delete && npx babel index.js --out-dir lib/index.js",
         "tag": "npm run build && npm publish ./"
     },
     "repository": {
