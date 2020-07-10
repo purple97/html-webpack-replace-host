@@ -1,6 +1,6 @@
 {
     "name": "html-webpack-replace-host",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "webpack plugin",
     "main": "lib/index.js",
     "scripts": {
