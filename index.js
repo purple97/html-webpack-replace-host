@@ -1,6 +1,6 @@
-/* 
-* 
-*/
+/*
+ * dezhao.chen
+ */
 class HtmlWebpackReplaceHost {
     constructor(options) {
         this.replacePluginInfo = options;
