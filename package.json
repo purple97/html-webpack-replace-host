@@ -5,7 +5,7 @@
     "main": "lib/index.js",
     "scripts": {
         "delete": "rm -rf lib && rm -rf dist",
-        "build": "npm run delete && npx babel index.js --out-dir lib/",
+        "build": "npm run delete && npx babel ./index.js --out-dir lib",
         "tag": "npm run build && npm publish ./"
     },
     "repository": {
