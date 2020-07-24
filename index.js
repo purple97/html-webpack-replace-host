@@ -10,6 +10,7 @@ class HtmlWebpackReplaceHost {
         var self = this;
         compiler.plugin('compilation', (compilation) => {
             compilation.plugin('html-webpack-plugin-alter-asset-tags', (data) => {
+                console.log(data.body);
                 data.head = self._handleChunksConfig(data.head, data.plugin.options.version);
                 data.body = self._handleChunksConfig(data.body, data.plugin.options.version);
             });
