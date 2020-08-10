@@ -33,16 +33,16 @@ class HtmlWebpackReplaceHost {
     }
 
     _setAttributesSrc(tag, replaceStr, version) {
-        var regex = new RegExp(/^[../]*/);
+        var regex = new RegExp(/^[\/\w\.]*\/build\//);
         if (process.env.NODE_ENV == 'daily' || process.env.NODE_ENV == 'local') {
             tag.attributes = Object.assign({}, tag.attributes, { src: './' + version + '/index.js' });
         } else if (tag.attributes.src && tag.attributes.src.match(regex)) {
             let _src = replaceStr
                 ? tag.attributes.src.replace(regex, replaceStr)
                 : tag.attributes.src.replace(regex, './').replace(/src\/[\w/]*\//, '');
-            if (tag.attributes.src.match(/javascripts\/build\//)) {
-                _src = _src.replace('javascripts/build/', '');
-            }
+            // if (tag.attributes.src.match(/javascripts\/build\//)) {
+            //     _src = _src.replace('javascripts/build/', '');
+            // }
             if (!_src.match(/\/[.\d]*/)) {
                 _src = _src.replace(/\/index\.js/, '/' + version + '/index.js');
             }
