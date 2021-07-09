@@ -1,6 +1,6 @@
 {
     "name": "html-webpack-replace-host",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "description": "webpack plugin",
     "main": "lib/index.js",
     "scripts": {
@@ -25,7 +25,6 @@
         "url": "https://github.com/purple97/html-webpack-replace-host/issues"
     },
     "homepage": "https://github.com/purple97/html-webpack-replace-host#readme",
-    "dependencies": {},
     "devDependencies": {
         "@babel/cli": "^7.4.3",
         "@babel/core": "^7.4.3",

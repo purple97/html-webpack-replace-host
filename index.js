@@ -33,7 +33,7 @@ class HtmlWebpackReplaceHost {
     }
 
     _setAttributesSrc(tag, replaceStr, version) {
-        var regex = new RegExp(/^[\/\w\.]*\/build\//);
+        var regex = new RegExp(/^(-|\/|\w|\.)*\/build\//);
         if (process.env.NODE_ENV == 'daily' || process.env.NODE_ENV == 'local') {
             tag.attributes = Object.assign({}, tag.attributes, {
                 src: tag.attributes.src.replace(/\.\/.*index.js/, './' + version + '/index.js')
