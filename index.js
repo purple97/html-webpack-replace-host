@@ -45,6 +45,7 @@ class HtmlWebpackReplaceHost {
             // if (tag.attributes.src.match(/javascripts\/build\//)) {
             //     _src = _src.replace('javascripts/build/', '');
             // }
+
             if (!_src.match(/\/[.\d]*/)) {
                 _src = _src.replace(/\/index\.js/, '/' + version + '/index.js');
             }
